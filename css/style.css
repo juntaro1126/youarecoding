@@ -52,12 +52,13 @@ header {
   background-color: white;
 }
 .header {
+max-width: 1022px;
+width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 20px 23px;
   margin: 0 auto;
-  max-width: 1062px;
 }
 .logo {
   display: flex;
@@ -214,9 +215,8 @@ color: #333333;
 /*------------------------------------------------------------------------------
 価格
 ------------------------------------------------------------------------------*/
-.table {
-  background: #EEFBFB 0% 0% no-repeat padding-box;
-  padding: 0 4%;
+.home_content_table_all {
+background-color: #EEFBFB;
 }
 .table h2 {
   padding-top: 55px;
@@ -224,30 +224,39 @@ color: #333333;
   font: normal normal bold 32px/28px Noto Sans JP;
 }
 table {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  max-width: 926px;
-  height: 410px;
-  margin: 0 auto;
+background-color: #FFFFFF;
+max-width: 926px;
+width: 100%;
+max-height: 410px;
+height: 410px;
+margin: 70px auto 0;
   box-shadow: 0px 3px 6px #00000029;
   border-collapse: collapse ;
-  text-align: center;
-  margin-top: 70px;
 }
 .tablecomment {
-  font: normal normal bold 16px/26px Noto Sans JP;
+font-weight: bold;
+font-size: 16px;
   color: #444444;
   text-align:center;
   margin-top: 36px;
   padding-bottom: 68px;
 }
-table td {
-  font: normal normal bold 16px/28px Noto Sans JP;
+table th {
+font-weight: bold;
+font-size: 16px;
   border: 1px solid #E5E5E5;
   padding-left: 19px;
   padding-right: 19px;
+max-width: 290px;
+width: 290px;
 }
-.yen {
-  padding-right: 33vw;
+table td {
+width: 580px;
+border: 1px solid #E5E5E5;
+font-weight: bold;
+font-size: 16px;
+color: #333333;
+padding-left: 31px;
 }
 /*------------------------------------------------------------------------------
 よくある質問
