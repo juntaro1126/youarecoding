@@ -347,16 +347,15 @@ padding-left: 31px;
 /*------------------------------------------------------------------------------
 ブログ
 ------------------------------------------------------------------------------*/
-.blog {
-  background: #EEFBFB 0% 0% no-repeat padding-box;
+.home_content_blog {
+  background-color: #EEFBFB;
   width: 100%;
   padding: 55px 4%;
 }
 .blogimgoutside {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  max-width: 1257px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1230px;
   margin: 0 auto;
 }
 .blogimginside {
@@ -364,7 +363,8 @@ padding-left: 31px;
   margin-bottom: 91px;
   font: normal normal bold 18px/26px Noto Sans JP;
   box-shadow: 0px 3px 6px #00000029;
-  width: 389px;
+  max-width: 389px;
+  width: 100%;
 }
 
 .blogimginside2 {
@@ -374,16 +374,22 @@ padding-left: 31px;
   margin-left: 19px;
 }
 /*------------------------------------------------------------------------------
-制作実績
+SP (max-width: 1024px) ブログ用
 ------------------------------------------------------------------------------*/
-.work {
-  margin-top: 55px;
-  margin-bottom: 90px;
+@media screen and (max-width: 1024px) {
+  .blogimgoutside {
+    flex-direction: column;
+  }
+  .blogimginside  {
+    margin: 0 auto;
+    width: 450px;
+    text-align: center;
+  }
+  .blogimginside img {
+    max-width: 389px;
+    width: 100%;
+  }
 }
-
-
-
-
 
 /*------------------------------------------------------------------------------
 お問い合わせ
@@ -494,23 +500,7 @@ padding-left: 31px;
   margin-bottom: 49px;
   font: normal normal normal 14px/20px Noto Sans JP;
 }
-/*------------------------------------------------------------------------------
-SP (max-width: 1060px) ブログ用
-------------------------------------------------------------------------------*/
-@media screen and (max-width: 1300px) {
-  .blogimgoutside {
-    grid-template-columns: 1fr;
-    max-width: 450px;
 
-  }
-  .blogimginside  {
-    width: 450px;
-    text-align: center;
-  }
-  .blogimginside img {
-    width: 450px;
-  }
-}
 
 
 /*------------------------------------------------------------------------------
@@ -691,10 +681,7 @@ section {
 /*------------------------------------------------------------------------------
 ブログ
 ------------------------------------------------------------------------------*/
-.blogimgoutside {
-  flex-direction: column;
-  
-}
+
 }
 /*------------------------------------------------------------------------------
 SP (max-width: 599px) スマートフォン用 display:none; display: block;
@@ -703,6 +690,5 @@ SP (max-width: 599px) スマートフォン用 display:none; display: block;
   body {
   margin: 0;
   box-sizing: border-box;
- }
-
+}
 }
