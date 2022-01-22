@@ -350,7 +350,7 @@ padding-left: 31px;
 .home_content_blog {
   background-color: #EEFBFB;
   width: 100%;
-  padding: 55px 4%;
+  padding: 55px 2%;
 }
 .blogimgoutside {
   display: flex;
@@ -368,7 +368,8 @@ padding-left: 31px;
 }
 
 .blogimginside2 {
-  padding-left: 270px;
+  padding-right: 32px;
+  text-align: right;
 }
 .blogimginside3 {
   margin-left: 19px;
@@ -380,7 +381,8 @@ padding-left: 31px;
   }
   .blogimginside  {
     margin: 0 auto 20px;
-    width: 450px;
+    max-width: 389px;
+    width: 100%;
     text-align: center;
   }
   .blogimginside img {
